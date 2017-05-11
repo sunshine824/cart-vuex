@@ -16,7 +16,7 @@
               <td>{{shop.id}}</td>
               <td>{{shop.name}}</td>
               <td>{{shop.price}}</td>
-              <td>{{shop.num || ''}}</td>
+              <td>{{shop.num || 0}}</td>
               <td>
                 <div class="btn btn-info" @click="add_db(shop)">{{shop.num ? '+' : '加入购物车'}}</div>
                 <div class="btn btn-warning" v-if="shop.num && shop.num>0" @click="reduce_db(shop)">-</div>
